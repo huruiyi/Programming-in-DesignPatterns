@@ -31,8 +31,6 @@ namespace 观察者模式
         //同事列表
         private IList<StockObserver> observers = new List<StockObserver>();
 
-        private string action;
-
         //增加
         public void Attach(StockObserver observer)
         {
@@ -53,11 +51,7 @@ namespace 观察者模式
         }
 
         //前台状态
-        public string SecretaryAction
-        {
-            get { return action; }
-            set { action = value; }
-        }
+        public string SecretaryAction { get; set; }
     }
 
     //看股票的同事

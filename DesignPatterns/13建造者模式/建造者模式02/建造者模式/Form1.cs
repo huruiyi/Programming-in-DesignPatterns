@@ -17,7 +17,7 @@ namespace 建造者模式
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Pen p = new Pen(Color.Yellow);
+            Pen p = new Pen(Color.Red);
 
             Graphics gThin = pictureBox1.CreateGraphics();
 

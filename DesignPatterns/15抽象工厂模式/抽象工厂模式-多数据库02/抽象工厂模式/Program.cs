@@ -21,21 +21,9 @@ namespace 抽象工厂模式
 
     internal class User
     {
-        private int _id;
+        public int ID { get; set; }
 
-        public int ID
-        {
-            get { return _id; }
-            set { _id = value; }
-        }
-
-        private string _name;
-
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
+        public string Name { get; set; }
     }
 
     internal interface IUser

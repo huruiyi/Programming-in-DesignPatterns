@@ -2,7 +2,7 @@
 
 namespace 模板方法模式
 {
-    internal class Program
+    public class Program
     {
         private static void Main(string[] args)
         {
@@ -18,7 +18,7 @@ namespace 模板方法模式
         }
     }
 
-    internal abstract class AbstractClass
+    public abstract class AbstractClass
     {
         public abstract void PrimitiveOperation1();
 
@@ -32,7 +32,7 @@ namespace 模板方法模式
         }
     }
 
-    internal class ConcreteClassA : AbstractClass
+    public class ConcreteClassA : AbstractClass
     {
         public override void PrimitiveOperation1()
         {
@@ -45,7 +45,7 @@ namespace 模板方法模式
         }
     }
 
-    internal class ConcreteClassB : AbstractClass
+    public class ConcreteClassB : AbstractClass
     {
         public override void PrimitiveOperation1()
         {

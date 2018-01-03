@@ -49,14 +49,8 @@ namespace 观察者模式
     //具体通知者
     internal class ConcreteSubject : Subject
     {
-        private string subjectState;
-
         //具体通知者状态
-        public string SubjectState
-        {
-            get { return subjectState; }
-            set { subjectState = value; }
-        }
+        public string SubjectState { get; set; }
     }
 
     internal abstract class Observer
@@ -68,27 +62,20 @@ namespace 观察者模式
     {
         private string name;
         private string observerState;
-        private ConcreteSubject subject;
 
-        public ConcreteObserver(
-          ConcreteSubject subject, string name)
+        public ConcreteObserver(ConcreteSubject subject, string name)
         {
-            this.subject = subject;
+            this.Subject = subject;
             this.name = name;
         }
 
         //更新
         public override void Update()
         {
-            observerState = subject.SubjectState;
-            Console.WriteLine("观察者{0}的新状态是{1}",
-              name, observerState);
+            observerState = Subject.SubjectState;
+            Console.WriteLine("观察者{0}的新状态是{1}",name, observerState);
         }
 
-        public ConcreteSubject Subject
-        {
-            get { return subject; }
-            set { subject = value; }
-        }
+        public ConcreteSubject Subject { get; set; }
     }
 }
