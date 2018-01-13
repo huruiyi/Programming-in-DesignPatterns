@@ -11,10 +11,7 @@
 
         public override void Operation()
         {
-            if (component != null)
-            {
-                component.Operation();
-            }
+            component?.Operation();
         }
     }
 }

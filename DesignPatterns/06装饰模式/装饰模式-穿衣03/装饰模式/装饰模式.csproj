@@ -58,16 +58,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="_3BigTrouser.cs" />
-    <Compile Include="Finery.cs" />
-    <Compile Include="_1LeatherShoes.cs" />
-    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="_4Sneakers.cs" />
-    <Compile Include="_6Suit.cs" />
-    <Compile Include="_2Tie.cs" />
-    <Compile Include="_5TShirts.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
